@@ -61,6 +61,7 @@
             .nav-links a:hover { 
                 background-color: rgba(255, 255, 255, 0.15);
                 transform: translateY(-2px);
+                box-shadow: 0 4px 15px rgba(255,255,255,0.2);
             }
     
             .nav-links a.active {
@@ -95,7 +96,58 @@
                 margin-left: auto;
                 margin-right: auto;
             }
-    
+            /* Skills grid */
+            .skills-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+                gap: 2rem;
+                margin-top: 3rem;
+            }
+
+            .skill-card {
+                background: white;
+                border-radius: 10px;
+                overflow: hidden;
+                box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+                transition: all 0.3s ease;
+            }
+
+            .skill-card:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 15px 30px rgba(110, 60, 33, 0.15);
+            }
+
+            .skill-content {
+                padding: 1.5rem;
+            }
+
+            .skill-title {
+                color: #38190b;
+                margin-bottom: 0.5rem;
+                font-size: 1.3rem;
+            }
+            .skill-description {
+                color: #666;
+                font-size: 0.95rem;
+                margin-bottom: 1rem;
+            }
+
+            .skill-link {
+                display: inline-block;
+                padding: 0.6rem 1.2rem;
+                background: linear-gradient(135deg, #6e3c21, #38190b);
+                color: white;
+                text-decoration: none;
+                border-radius: 6px;
+                transition: all 0.3s ease;
+                font-weight: 500;
+            }
+            
+            .skill-link:hover {
+                transform: translateY(-2px);
+                box-shadow: 0 5px 15px rgba(110, 60, 33, 0.3);
+            }
+
             /* Project grid */
             .project-grid {
                 display: grid;
